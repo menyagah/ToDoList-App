@@ -22,7 +22,7 @@ for (let todos of todoList){
     const div = document.createElement('div');
     div.classList.add('d-height');
     div.classList.add('todo-cont');
-    div.innerHTML = `<li><input type="checkbox" class="check-box"   id="check">${todos.description}</li>
+    div.innerHTML = `<li><input type="checkbox" class="check-box "   id="check">${todos.description}</li>
     <div class="delete-icon"></div>`
     data.appendChild(div)
 }
