@@ -19,17 +19,10 @@ const todoList = [{
 ];
 
 todoList.forEach(({ description }) => {
-    const div = document.createElement('div');
   const div = document.createElement('div');
-    div.classList.add('d-height');
   div.classList.add('d-height');
-    div.classList.add('todo-cont');
   div.classList.add('todo-cont');
-    div.innerHTML = `<li><input type="checkbox" class="check-box"   id="check">${todos.description}</li>
   div.innerHTML = `<li><input type="checkbox" class="check-box"   id="check">${description}</li>
-    <div class="delete-icon"></div>`
-    <div class="delete-icon"></div>`;
-    data.appendChild(div)
+      <div class="delete-icon"></div>`;
   data.appendChild(div);
-}
 });
