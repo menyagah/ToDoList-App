@@ -2,27 +2,34 @@ import './style/styles.css';
 
 const data = document.querySelector('.data');
 const todoList = [{
-    description: 'wash the dishes',
-    completed: false,
-    id: 1,
-  },
-  {
-    description: 'complete the dishes',
-    completed: false,
-    id: 2,
-  },
-  {
-    description: 'complete To Do list project',
-    completed: false,
-    id: 3,
-  },
-  ];
+  description: 'wash the dishes',
+  completed: false,
+  id: 1,
+},
+{
+  description: 'complete the dishes',
+  completed: false,
+  id: 2,
+},
+{
+  description: 'complete To Do list project',
+  completed: false,
+  id: 3,
+},
+];
 
-for (let todos of todoList){
+todoList.forEach(({ description }) => {
     const div = document.createElement('div');
+  const div = document.createElement('div');
     div.classList.add('d-height');
+  div.classList.add('d-height');
     div.classList.add('todo-cont');
-    div.innerHTML = `<li><input type="checkbox" class="check-box "   id="check">${todos.description}</li>
+  div.classList.add('todo-cont');
+    div.innerHTML = `<li><input type="checkbox" class="check-box"   id="check">${todos.description}</li>
+  div.innerHTML = `<li><input type="checkbox" class="check-box"   id="check">${description}</li>
     <div class="delete-icon"></div>`
+    <div class="delete-icon"></div>`;
     data.appendChild(div)
+  data.appendChild(div);
 }
+});
