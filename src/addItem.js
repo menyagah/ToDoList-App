@@ -10,7 +10,7 @@ const addTodo = () => {
         alert('You cannot add empty fields');
       } else {
         const todos = JSON.parse(localStorage.getItem('todo') || '[]');
-        const id = Math.random().toString(36).substr(0, 5);
+        const id = todos.length + 1;
         todos.push({ description: input.value, completed: false, id });
         localStorage.setItem('todo', JSON.stringify(todos));
         input.value = '';
