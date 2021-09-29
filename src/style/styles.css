@@ -57,14 +57,22 @@ li {
 
 .input-field {
   border: none;
+  width: 70%;
+  height: 40px;
 }
 
-.input-field:focus {
-  outline: none;
+.input-container {
+  display: flex;
+  align-items: center;
 }
+
+/* .input-field:focus {
+  outline: 1px solid;
+} */
 
 .input-description {
   padding: 5px;
+  width: 500px;
 }
 
 .todo-cont {
