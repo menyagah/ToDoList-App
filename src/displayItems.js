@@ -1,4 +1,3 @@
-
 const displayTodos = () => {
   const data = document.querySelector('.data');
   data.innerHTML = '';
