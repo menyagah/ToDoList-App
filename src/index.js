@@ -1,10 +1,10 @@
 import './style/styles.css';
-import addTodo from './eventListners.js';
+import addTodo from './addItem';
 import displayTodos from './displayItems.js';
-import attachInputEventListeners from './attachCheckListener.js';
+import attachEventListeners from './attachEventListener.js';
 import clearAllBtn from './clearAll.js';
 
 displayTodos();
 addTodo();
-attachInputEventListeners();
+attachEventListeners();
 clearAllBtn();

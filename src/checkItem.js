@@ -1,6 +1,6 @@
 const checkItem = (i, e, todoList) => {
   todoList[i].completed = e.target.checked;
-  return todoList[i];
+  localStorage.setItem('todo', JSON.stringify(todoList));
 };
 
 export default checkItem;
