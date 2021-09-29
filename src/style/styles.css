@@ -21,7 +21,7 @@ li {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
   box-shadow: -3px 2px 14px 1px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: -3px 2px 14px 1px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: -3px 2px 14px 1px rgba(0, 0, 0, 0.63);
@@ -57,10 +57,18 @@ li {
 
 .input-field {
   border: none;
+  width: 70%;
+  height: 40px;
 }
 
-.input-field:focus {
-  outline: none;
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-description {
+  padding: 5px;
+  width: 500px;
 }
 
 .todo-cont {
@@ -68,7 +76,7 @@ li {
   justify-content: space-between;
   align-items: center;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
 }
 
@@ -76,8 +84,20 @@ li {
   margin-right: 4px;
 }
 
+.no-border {
+  border: none;
+  outline: none;
+}
+
 .delete-icon {
   background-image: url(/src/assets/menu.png);
+  background-size: cover;
+  height: 13px;
+  width: 13px;
+}
+
+.delete-trash {
+  background-image: url(/src/assets/delete.png);
   background-size: cover;
   height: 13px;
   width: 13px;
@@ -93,5 +113,5 @@ li {
 .btn {
   border: none;
   font-size: 20px;
-  color: rgb(139, 139, 139);
+  color: rgb(66, 60, 60);
 }
